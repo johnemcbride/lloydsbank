@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.noip.cityhome</groupId>
+    <artifactId>lloydsbank</artifactId>
+    <version>0.1.0</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.2.2.RELEASE</version>
+    </parent>
+    
+        
+   <dependencies>
+
+  
+    <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+      
+        </dependency>
+      
+
+            <dependency>
+	    <groupId>javax.mail</groupId>
+	    <artifactId>mail</artifactId>
+	    <version>1.4.3</version>
+    </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+      
+    
+        
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+     
+        <dependency>
+		  <groupId>net.sourceforge.htmlunit</groupId>
+		  <artifactId>htmlunit</artifactId>
+		  <version>2.17</version>
+		</dependency>
+		<dependency>
+	<groupId>junit</groupId>
+	<artifactId>junit</artifactId>
+	</dependency>
+	<dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpclient</artifactId>
+	<version>4.4.1</version>
+</dependency>
+
+ 
+  <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-batch</artifactId>
+        </dependency>
+ 
+	    <dependency>
+     	    <groupId>org.springframework</groupId>
+	    <artifactId>spring</artifactId>
+	    <version>2.5.6</version>
+    </dependency>
+		
+		  
+    </dependencies>
+
+
+ <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.5</version>
+      
+      
+      </plugin>
+    </plugins>
+  </reporting>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+             <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.5</version>
+         <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+              <goal>cpd-check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+            
+            
+        
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+       
+      </plugin>
+
+
+        </plugins>
+    </build>
+
+    <repositories>
+    
+          <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+          <repository>
+    <id>sonatype</id>
+    <name>Sonatype OSS Snapshots Repository</name>
+    <url>http://oss.sonatype.org/content/groups/public</url>
+  </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
